@@ -25,6 +25,7 @@ public class GrammarCheckHandler : DocumentHandler
     {
         Console.WriteLine("Checking for grammar mistakes...");
 
+
         if (_next != null)
         {
             _next.HandleRequest(document);
@@ -53,7 +54,7 @@ public class CopyrightInfringementCheckHandler : DocumentHandler
 
     public override void HandleRequest(Document document)
     {
-        Console.WriteLine("Checking for copyright infrigement...");
+        Console.WriteLine("Checking for copyright infringement...");
 
         if (_next != null)
         {
